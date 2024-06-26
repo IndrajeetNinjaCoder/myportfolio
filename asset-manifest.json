@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/myportfolio/static/css/main.bf538fe7.css",
+    "main.js": "/myportfolio/static/js/main.c05fa68a.js",
+    "static/media/HeroImage.png": "/myportfolio/static/media/HeroImage.8923e1b3285314037891.png",
+    "static/media/offerLetter.png": "/myportfolio/static/media/offerLetter.de8ffbb48c1794fdbbce.png",
+    "index.html": "/myportfolio/index.html",
+    "main.bf538fe7.css.map": "/myportfolio/static/css/main.bf538fe7.css.map",
+    "main.c05fa68a.js.map": "/myportfolio/static/js/main.c05fa68a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf538fe7.css",
+    "static/js/main.c05fa68a.js"
+  ]
+}
