@@ -143,47 +143,60 @@ const Skill = styled.div`
     }
 `
 
-
+const Button = styled.button`
+    font-size: 18px;
+    font-weight: 600;
+    background: none;
+    outline: none;
+    color: ${({ theme }) => theme.text_primary + 99};
+    @media only screen and (max-width: 768px){
+        font-size: 14px;
+    }
+`
 
 
 
 const ExperienceCard = ({ experience }) => {
     return (
         <Card>
-        <Top>
-            <Logo src={experience.img} />
-            <Body>
-                <Role>{experience.role}</Role>
-                <Company>{experience.company}</Company>
-                <Duration>{experience.date}</Duration>
-            </Body>
-        </Top>
-        <Description>
-            {experience?.desc &&
-                <Span>{experience?.desc}</Span>
+            
+            
+            <Top>
+                <Logo src={experience.img} />
+                <Body>
+                    <Role>{experience.role}</Role>
+                    <Company>{experience.company}</Company>
+                    <Duration>{experience.date}</Duration>
+                </Body>
+            </Top>
+            <a href='https://encodingo.com/' style={{color:'#b58aff'}} target="_blank">See my Work</a>
+            <Description>
+                
+                {experience?.desc &&
+                    <Span>{experience?.desc}</Span>
 
+                }
+                {experience?.skills &&
+                    <>
+                        <br />
+                        <Skills>
+                            <b>Skills:</b>
+                            <ItemWrapper>
+                                {experience?.skills?.map((skill, index) => (
+                                    <Skill>• {skill}</Skill>
+                                ))}
+                            </ItemWrapper>
+                        </Skills>
+                    </>
+                }
+            </Description>
+            {experience.doc &&
+                <a href={experience.doc} target="new">
+                    <Document src={offerLetter} />
+                </a>
             }
-            {experience?.skills &&
-                <>
-                    <br />
-                    <Skills>
-                        <b>Skills:</b>
-                        <ItemWrapper>
-                            {experience?.skills?.map((skill, index) => (
-                                <Skill>• {skill}</Skill>
-                            ))}
-                        </ItemWrapper>
-                    </Skills>
-                </>
-            }
-        </Description>
-        {experience.doc &&
-            <a href={experience.doc} target="new">
-                <Document src={offerLetter} />
-            </a>
-        }
-    </Card>
-)
+        </Card>
+    )
 }
 
 export default ExperienceCard
