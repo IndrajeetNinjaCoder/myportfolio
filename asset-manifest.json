@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/myportfolio/static/css/main.bf538fe7.css",
-    "main.js": "/myportfolio/static/js/main.e001e8b8.js",
+    "main.js": "/myportfolio/static/js/main.f1df93cc.js",
     "static/media/HeroImage.png": "/myportfolio/static/media/HeroImage.70b20ef70677d8702b42.png",
     "static/media/offerLetter.png": "/myportfolio/static/media/offerLetter.de8ffbb48c1794fdbbce.png",
     "index.html": "/myportfolio/index.html",
     "main.bf538fe7.css.map": "/myportfolio/static/css/main.bf538fe7.css.map",
-    "main.e001e8b8.js.map": "/myportfolio/static/js/main.e001e8b8.js.map"
+    "main.f1df93cc.js.map": "/myportfolio/static/js/main.f1df93cc.js.map"
   },
   "entrypoints": [
     "static/css/main.bf538fe7.css",
-    "static/js/main.e001e8b8.js"
+    "static/js/main.f1df93cc.js"
   ]
 }
